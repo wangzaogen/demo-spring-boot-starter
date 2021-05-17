@@ -10,11 +10,6 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @EnableConfigurationProperties(WangDemoProperties.class)
-@ConditionalOnProperty(
-        prefix = "demo",
-        name = "isopen",
-        havingValue = "true"
-)
 public class WangDemoConfig {
 
     @Autowired
